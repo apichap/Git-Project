@@ -1,0 +1,9 @@
+CPN:23-0001-006,SN:J24081325
+CPN:23-0001-006,SN:J24081455
+
+
+
+SN Hitronics;Machine No.;Result;Remark;Port 1 Power;Port 2 Power;Port 1 to Port 2 Difference (%);Port 1 Optical Power Setpoint Offset (%);Port 2 Optical Power Setpoint Offset (%);Pulse Width Port 1 (Mean);Pulse Width Port 1 (Min);Pulse Width Port 1 (Max);Pulse Rise Time Port 1 (Mean);Pulse Rise Time Port 1 (Min);Pulse Rise Time Port 1 (Max);Pulse Rise Time Fluctuation Port 1;Pulse Delay Time Port 1 (Mean);Pulse Delay Time Port 1 (Min);Pulse Delay Time Port 1 (Max);Pulse Delay Fluctuation Port 1;Pulse Peak (Mean);Pulse Peak (Min);Pulse Peak (Max);Pulse Peak Fluctuation
+J24091515;DT-FAB-BUILD01;PASS;;460.2;468.2;-1.72;1.37;3.13;2.1;1.9;2.2;908.0;600;1100;500;98.1;98.3;98.7;0.4;217;209;218;9
+
+J24081455;DT-FAB-BUILD01;PASS;;461.2;469.2;-1.72;1.37;3.13;2.1;1.9;2.2;908.0;600;900;300;98.1;98.3;98.7;0.4;217;209;210;1
