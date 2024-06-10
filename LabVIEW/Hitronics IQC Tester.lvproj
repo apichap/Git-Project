@@ -78,6 +78,8 @@
 			<Item Name="PM100D_SensorFlag.vi" Type="VI" URL="../../../Program Files (x86)/Thorlabs/PowerMeters/LabViewExample/PM100D_SensorFlag.vi"/>
 			<Item Name="PM100D_InitializeM2.vi" Type="VI" URL="../PM100D_InitializeM2.vi"/>
 			<Item Name="Agilent 2000 3000 X-Series.lvlib" Type="Library" URL="../Agilent 2000 3000 X-Series/Agilent 2000 3000 X-Series.lvlib"/>
+			<Item Name="Timer Dialog.vi" Type="VI" URL="../Timer Dialog.vi"/>
+			<Item Name="Pass Fail Dialog.vi" Type="VI" URL="../Pass Fail Dialog.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="SimpleTester" Type="EXE">
