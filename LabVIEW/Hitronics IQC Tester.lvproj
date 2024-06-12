@@ -25,6 +25,7 @@
 		<Item Name="Vars.ctl" Type="VI" URL="../Vars.ctl"/>
 		<Item Name="Hitronics Dialog - Scan.vi" Type="VI" URL="../Hitronics Dialog - Scan.vi"/>
 		<Item Name="PM100D Measure1.vi" Type="VI" URL="../PM100D Measure1.vi"/>
+		<Item Name="LT-FITSDL-HitronicsIQC.vi" Type="VI" URL="../LT-FITSDL-HitronicsIQC.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -62,7 +63,6 @@
 				<Item Name="subDisplayMessage.vi" Type="VI" URL="/&lt;vilib&gt;/express/express output/DisplayMessageBlock.llb/subDisplayMessage.vi"/>
 				<Item Name="VISA GPIB Control REN Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA GPIB Control REN Mode.ctl"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 			</Item>
 			<Item Name="VarsIn.ctl" Type="VI" URL="../VarsIn.ctl"/>
 			<Item Name="VarsOut.ctl" Type="VI" URL="../VarsOut.ctl"/>
@@ -80,6 +80,8 @@
 			<Item Name="Agilent 2000 3000 X-Series.lvlib" Type="Library" URL="../Agilent 2000 3000 X-Series/Agilent 2000 3000 X-Series.lvlib"/>
 			<Item Name="Timer Dialog.vi" Type="VI" URL="../Timer Dialog.vi"/>
 			<Item Name="Pass Fail Dialog.vi" Type="VI" URL="../Pass Fail Dialog.vi"/>
+			<Item Name="Control 1.ctl" Type="VI" URL="../Control 1.ctl"/>
+			<Item Name="Control 2.ctl" Type="VI" URL="../Control 2.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="SimpleTester" Type="EXE">
