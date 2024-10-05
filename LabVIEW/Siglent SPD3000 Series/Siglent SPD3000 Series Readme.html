@@ -1,0 +1,629 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List
+href="Siglent%20SPD3000%20Series%20Readme.files/filelist.xml">
+<title>Instrument Driver Readme</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="chsdate"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>&#24494;&#36719;&#29992;&#25143;</o:Author>
+  <o:LastAuthor>Peter.Chen</o:LastAuthor>
+  <o:Revision>15</o:Revision>
+  <o:TotalTime>52</o:TotalTime>
+  <o:Created>2014-12-08T01:55:00Z</o:Created>
+  <o:LastSaved>2015-12-19T06:14:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>604</o:Words>
+  <o:Characters>3446</o:Characters>
+  <o:Company>&#24494;&#36719;&#20013;&#22269;</o:Company>
+  <o:Lines>28</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>4042</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData
+href="Siglent%20SPD3000%20Series%20Readme.files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="Siglent%20SPD3000%20Series%20Readme.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="99" Name="Hyperlink"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1107304683 0 0 159 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:SimSun;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"\6807\9898 2 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"\6807\9898 4 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	mso-style-link:"\9875\7709 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:SimSun;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	mso-style-link:"\9875\811A Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:SimSun;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-unhide:no;
+	mso-style-link:"\6587\6863\7ED3\6784\56FE Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:SimSun;
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+pre
+	{mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-link:"HTML \9884\8BBE\683C\5F0F Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:SimSun;
+	mso-bidi-font-family:SimSun;}
+span.2Char
+	{mso-style-name:"\6807\9898 2 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"\6807\9898 2";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:SimSun;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	font-weight:bold;}
+span.4Char
+	{mso-style-name:"\6807\9898 4 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"\6807\9898 4";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:SimSun;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	font-weight:bold;}
+span.HTMLChar
+	{mso-style-name:"HTML \9884\8BBE\683C\5F0F Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML \9884\8BBE\683C\5F0F";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:SimSun;
+	mso-ascii-font-family:SimSun;
+	mso-fareast-font-family:SimSun;
+	mso-hansi-font-family:SimSun;
+	mso-bidi-font-family:SimSun;}
+span.Char
+	{mso-style-name:"\9875\7709 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:\9875\7709;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:SimSun;
+	mso-ascii-font-family:SimSun;
+	mso-fareast-font-family:SimSun;
+	mso-hansi-font-family:SimSun;}
+span.Char0
+	{mso-style-name:"\9875\811A Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:\9875\811A;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:SimSun;
+	mso-ascii-font-family:SimSun;
+	mso-fareast-font-family:SimSun;
+	mso-hansi-font-family:SimSun;}
+span.Char1
+	{mso-style-name:"\6587\6863\7ED3\6784\56FE Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:\6587\6863\7ED3\6784\56FE;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:SimSun;
+	mso-ascii-font-family:SimSun;
+	mso-fareast-font-family:SimSun;
+	mso-hansi-font-family:SimSun;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("Siglent%20SPD3000%20Series%20Readme.files/header.html") fs;
+	mso-footnote-continuation-separator:url("Siglent%20SPD3000%20Series%20Readme.files/header.html") fcs;
+	mso-endnote-separator:url("Siglent%20SPD3000%20Series%20Readme.files/header.html") es;
+	mso-endnote-continuation-separator:url("Siglent%20SPD3000%20Series%20Readme.files/header.html") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:\666E\901A\8868\683C;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!-- Find and Replace all instances of 'Driver Identifer' with the Driver Identifier of your instrument driver 
+
+     Remove this note once this is complete. --><!-- Replace all the instructions that appear within the <font color="red"> tags with information about your instrument driver.  Make sure to delete the <font color="red"> tags as you fill in each line. Remove this note once this is complete.--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="17410"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN link=blue vlink=blue style='tab-interval:21.0pt'>
+
+<div class=WordSection1>
+
+<h2><span class=SpellE><span lang=EN-US style='mso-fareast-font-family:"Times New Roman"'>Siglent</span></span><span
+lang=EN-US style='mso-fareast-font-family:"Times New Roman"'> SPD3000 Series
+Instrument Driver Readme<o:p></o:p></span></h2>
+
+<p class=MsoNormal><span lang=EN-US><PARA>To rate this instrument <span
+class=GramE>driver ,</span> go to the driver download page on the <a
+href="http://www.ni.com/idnet">Instrument Driver Network</a>.</PARA> </span></p>
+
+<h4><span lang=EN-US style='mso-fareast-font-family:"Times New Roman"'>1.
+Overview<o:p></o:p></span></h4>
+
+<p class=MsoNormal><span lang=EN-US><PARA>Instrument Driver Technology: <span
+class=SpellE>LabVIEW</span> Plug and Play (project-style) <br>
+Manufacturer: <span class=SpellE>Siglent</span> Technologies<br>
+Supported Language(s): <span class=SpellE>LabVIEW</span> <br>
+Supported Model(s): SPD3303C, SPD3303D, SPD3303S, SPD3303X and SPD3303X-E
+Programmable DC Power Supply<br>
+Model(s) Tested: SPD3303X <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
+
+<p class=MsoNormal><span lang=EN-US>Interface(s): USB, Ethernet (SPD3303X,
+SPD3303X-E<span class=GramE>)</span><br>
+Instrument Software Revision(s) Tested: <st1:chsdate Year="1899" Month="12"
+Day="30" IsLunarDate="False" IsROCDate="False" w:st="on">1.01.01</st1:chsdate>.02.02R1</span></p>
+
+<p class=MsoNormal><span lang=EN-US><br>
+Certified: Yes <br>
+NI Supported: Yes <br>
+Source Code Available: Yes <br>
+<br>
+Driver Revision: 1.0 <br>
+Original Release Date: 02/2016<br>
+Current Revision Date: 02/2016 <o:p></o:p></span></p>
+
+<h4><span lang=EN-US style='mso-fareast-font-family:"Times New Roman"'></PARA>2.
+Required Software<o:p></o:p></span></h4>
+
+<p class=MsoNormal><span lang=EN-US><PARA>Some software components need to be
+installed before using this instrument driver. The minimum versions of these
+components are listed below, and can be downloaded from the Download Site. <br>
+<br>
+<span class=GramE>The support software required by the driver.</span> <br>
+<PARA>VISA 5.0 or later <br>
+<br>
+Refer to the <span class=SpellE><i>LabVIEW</i></span><i> Help</i> for more
+information about software requirements. You access the <span class=SpellE><i>LabVIEW</i></span><i>
+Help</i> by selecting <span class=SpellE><i>Help&raquo;Search</i></span><i> the
+<span class=SpellE>LabVIEW</span> Help</i>.</PARA> </span></p>
+
+<h4 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+lang=EN-US style='mso-fareast-font-family:"Times New Roman"'>3. Installation
+Instructions<o:p></o:p></span></h4>
+
+<pre><span lang=EN-US style='font-family:"Times New Roman","serif"'>The <span
+class=SpellE>Siglent</span> SPD3000 Series driver should be installed under your <span
+class=SpellE>LabVIEW</span> installations instr.lib folder, in a folder called <span
+class=SpellE>Siglent</span> SPD3000 Series. This is most easily done by <o:p></o:p></span></pre><pre><span
+class=GramE><span lang=EN-US style='font-family:"Times New Roman","serif"'>opening</span></span><span
+lang=EN-US style='font-family:"Times New Roman","serif"'> the <span
+class=SpellE>Siglent</span> SPD3000 Series.zip file using <span class=SpellE>Winzip</span>. From the <span
+class=SpellE>Winzip</span> main window, select Extract, and in the subsequent window find and select your <span
+class=SpellE>LabVIEW</span> <o:p></o:p></span></pre><pre><span lang=EN-US
+style='font-family:"Times New Roman","serif"'>instr.lib folder. The Siglent SPD3000 Series.zip archive includes path information beginning with the Siglent SPD3000 Series folder, so there is no need to create this folder yourself. <o:p></o:p></span></pre><pre><span
+lang=EN-US style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-US style='font-family:"Times New Roman","serif"'>Make sure that the options &quot;All files/folders in archive&quot; and &quot;Use folder names&quot; are selected, and then click the Extract button. Within the <span
+class=SpellE>Siglent</span> SPD3000 Series directory you can find the menu files and VI libraries that make up the instrument driver. <o:p></o:p></span></pre><pre><span
+lang=EN-US style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-US style='font-family:"Times New Roman","serif"'>The menu files allow you to view the instrument driver VIs from the Functions palette. The VI libraries contain the instrument driver <span
+class=SpellE>VIs.</span> This Readme file will also be extracted to the <span
+class=SpellE>Siglent</span> SPD3000 Series folder.<o:p></o:p></span></pre><pre><span
+lang=EN-US style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></pre>
+
+<h4 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+lang=EN-US style='mso-fareast-font-family:"Times New Roman"'>4. Using the
+Instrument Driver</span><span lang=EN-US style='font-family:SimSun;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:SimSun'><o:p></o:p></span></h4>
+
+<pre><span class=SpellE><span lang=EN-US style='font-family:"Times New Roman","serif"'>LabVIEW</span></span><span
+lang=EN-US style='font-family:"Times New Roman","serif"'>:<o:p></o:p></span></pre><pre><span
+lang=EN-US style='font-family:"Times New Roman","serif"'>To verify communication with your instrument and test a typical programmatic instrument operation, you should first open the Example VIs contained within the instrument driver. <o:p></o:p></span></pre><pre><span
+lang=EN-US style='font-family:"Times New Roman","serif"'>To find the examples, open up the project file, which is located in the <span
+class=GramE>path ..instr.lib/<span class=SpellE>Siglent</span></span> SPD3000 Series /<span
+class=SpellE>Siglent</span> SPD3000 <span class=SpellE>Series.lvproj</span><o:p></o:p></span></pre><pre><span
+lang=EN-US style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-US style='font-family:"Times New Roman","serif"'>Look over each of the controls and set them appropriately. Generally, with the exception of the address field, the defaults for most controls will be sufficient for your first run. <o:p></o:p></span></pre><pre><span
+lang=EN-US style='font-family:"Times New Roman","serif"'>You will need to set the instrument resource name appropriately. After running the VI, check to see that reasonable data was returned and an error was not reported in the error cluster.<o:p></o:p></span></pre><pre><span
+lang=EN-US style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></pre><pre><span
+lang=EN-US style='font-family:"Times New Roman","serif"'>After you have verified basic communication with your instrument, you might want to customize instrument control for your needs. If your application needs are similar to the Getting Started<o:p></o:p></span></pre><pre><span
+lang=EN-US style='font-family:"Times New Roman","serif"'> <span class=GramE>or</span> Example VI, the simplest means of creating a customized VI is to save a copy of the Getting Started or Example VI by selecting Save As from the File menu. You can then modify this <o:p></o:p></span></pre><pre><span
+class=GramE><span lang=EN-US style='font-family:"Times New Roman","serif"'>example</span></span><span
+lang=EN-US style='font-family:"Times New Roman","serif"'> to meet your specific needs.<o:p></o:p></span></pre><pre><span
+class=GramE><span lang=EN-US style='font-family:"Times New Roman","serif"'>For more details, reference the <span
+class=SpellE><i>LabVIEW</i></span><i> Help</i> under <i>Help &raquo; VI, Function, &amp; How-To Help</i>.</span></span><span
+lang=EN-US style='font-family:"Times New Roman","serif"'><o:p></o:p></span></pre><pre><span
+lang=EN-US style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></pre>
+
+<h4 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+lang=EN-US style='mso-fareast-font-family:"Times New Roman"'>5. Known Issues</span><span
+lang=EN-US style='font-family:SimSun;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:SimSun'><o:p></o:p></span></h4>
+
+<pre><span lang=EN-US style='font-family:"Times New Roman","serif"'>To report issues or provide feedback about this instrument driver, please send an email to <a
+href="mailto:instrument.drivers@ni.com">instrument.drivers@ni.com</a>.<o:p></o:p></span></pre>
+
+<h4 style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+lang=EN-US style='mso-fareast-font-family:"Times New Roman"'>6. Revision
+History</span><span lang=EN-US style='font-family:SimSun;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:SimSun'><o:p></o:p></span></h4>
+
+<pre><span lang=EN-US style='font-family:"Times New Roman","serif"'>The latest version of this and other <span
+class=SpellE>LabVIEW</span> instrument drivers can be downloaded at the <a
+href="http://www.ni.com/idnet">Instrument Driver Network</a>.<o:p></o:p></span></pre><pre><b><span
+lang=EN-US style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></b></pre><pre><b><span
+lang=EN-US style='font-family:"Times New Roman","serif"'>REV 1.0, 02/2016, Initial release<o:p></o:p></span></b></pre>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+lang=EN-US>Created by: <span class=SpellE>Peter.Chen</span></span><span
+lang=EN-US style='font-family:SimSun;mso-bidi-font-family:SimSun'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+lang=EN-US>Test Department</span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+lang=EN-US>2016 SIGLENT TECHNOLOGIES CO., LTD</span></p>
+
+<h4><span lang=EN-US style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h4>
+
+</div>
+
+</body>
+
+</html>
