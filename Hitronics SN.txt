@@ -12,5 +12,11 @@ J24081455;DT-FAB-BUILD01;PASS;;461.2;469.2;-1.72;1.37;3.13;2.1;1.9;2.2;908.0;600
 J24081455;DT-FAB-BUILD01;PASS;;453.3m;467.7m;-1.72;1.37;3.13;2.063n;1.919n;2.113n;984.5p;762.5p;1.311n;548.8p;92.21n;92.10n;92.40n;300.0p;220.4m;211.1m;230.1m;8.631
 J24091515;DT-FAB-BUILD01;FAIL;;454.3m;466.7m;-2.72;1.47;3.23;2.043n;1.909n;2.103n;985.5p;763.5p;1.411n;549.8p;93.21n;93.10n;93.40n;301.0p;221.4m;212.1m;231.1m;8.731
 
-Current;Electrical Power;E/O Efficiency;Pump Current
-J24081455;DT-FAB-BUILD01;PASS;;310m;19;50;3.19;453.3m;467.7m;-1.72;1.37;3.13;2.063n;1.919n;2.113n;984.5p;762.5p;1.311n;548.8p;92.21n;92.10n;92.40n;300.0p;220.4m;211.1m;230.1m;8.631
+----Latest----
+SN Hitronics;Machine No.;Result;Remark;Current;Electrical Power;E/O Efficiency;Pump Current;Port 1 Power;Port 2 Power;Port 1 to Port 2 Difference (%);Port 1 Optical Power Setpoint Offset (%);Port 2 Optical Power Setpoint Offset (%);Pulse Width Port 1 (Mean);Pulse Width Port 1 (Min);Pulse Width Port 1 (Max);Pulse Rise Time Port 1 (Mean);Pulse Rise Time Port 1 (Min);Pulse Rise Time Port 1 (Max);Pulse Rise Time Fluctuation Port 1;Pulse Delay Time Port 1 (Mean);Pulse Delay Time Port 1 (Min);Pulse Delay Time Port 1 (Max);Pulse Delay Fluctuation Port 1;Pulse Peak (Mean);Pulse Peak (Min);Pulse Peak (Max);Pulse Peak Fluctuation
+
+J24091515;DT-FAB-BUILD01;PASS;;1.3;19;50;3.19;453.3m;467.7m;-1.72;1.37;3.13;2.063n;1.919n;2.113n;984.5p;762.5p;1.311n;548.8p;92.21n;92.10n;92.40n;300.0p;220.4m;211.1m;230.1m;8.631
+
+
+
+
